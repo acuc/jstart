@@ -1,15 +1,32 @@
 
 
 entity Agency {
-
+    name String
+    country String
+	city String
+	state String
+    address String
+    phone String
+    reference String
 }
 
-entity B {
+entity Agency {
+    name String
+    country String
+	city String
+	state String
+    address String
+    phone String
+    reference String
+}
 
+entity Settings {
+    settingKey String
+    settingValue String
 }
 
 relationship OneToMany {
-  A to B
+  Agency to Settings
 }
 
 
