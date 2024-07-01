@@ -1,0 +1,65 @@
+
+
+entity Agency {
+    name String
+    country String
+	city String
+	state String
+    address String
+    phone String
+    reference String
+}
+
+entity Agency {
+    name String
+    country String
+	city String
+	state String
+    address String
+    phone String
+    reference String
+}
+
+entity Settings {
+    settingKey String
+    settingValue String
+}
+
+relationship OneToMany {
+  Agency to Settings
+}
+
+
+application {
+  config {
+   applicationType monolith
+    authenticationType jwt
+    baseName pangea
+    buildTool maven
+    cacheProvider ehcache
+    clientFramework react
+    clientTheme spacelab
+    clientThemeVariant primary
+    creationTimestamp 1719774946352
+    databaseType sql
+    devDatabaseType mysql
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    jhipsterVersion "8.6.0"
+    jwtSecretKey "YmRjMjJkZTM1Nzg3ZjZhYWE0NGQwYWE0NmYzMjE5ZWNlMWFhMjg1Y2NjMjhiY2FmOGQ2MWVkODg4ZmU3MzE1YjFiMGFmNTY5ZmYyOTQzNDk1NzEyNjUyODBhOTc3MWRiOTNjNjc0MTg3NjFjNDVlNTk0OWFiNWUwYWFhYjIxMjU="
+    languages [en, zh-cn, es]
+    messageBroker false
+    microfrontends []
+    nativeLanguage en
+    packageName com.alx.pangea
+    prodDatabaseType mysql
+    reactive false
+    searchEngine false
+    serviceDiscoveryType false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+  entities *
+}
